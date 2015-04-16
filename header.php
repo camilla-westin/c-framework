@@ -27,3 +27,7 @@
 	</header>
 
 <div id="pagecontainer">
+
+	<div id="breadcrumbs">
+		<?php if(function_exists('the_breadcrumbs')) the_breadcrumbs(); ?>
+	</div>
