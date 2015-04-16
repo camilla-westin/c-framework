@@ -12,19 +12,24 @@
 
 <body <?php body_class(); ?>>
 
-	<header>
+	<!-- Skip links for screen readers -->
+	<a class="skip-link screen-reader-text" href="#pagecontainer"><?php _e( 'Skip to content', 'c-framework' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#header-nav"><?php _e( 'Skip to navigation', 'c-framework' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#header-search"><?php _e( 'Skip to search', 'c-framework' ); ?></a>
 
-		<div class="header-logo">
-			<a href="<?php bloginfo('url'); ?>"><img src="" alt="Logotype"></a>
-		</div>
+<header>
 
-		<div class="header-search"><?php get_search_form(); ?></div>
+	<div class="header-logo">
+		<a href="<?php bloginfo('url'); ?>"><img src="" alt="Logotype"></a>
+	</div>
 
-		<nav class="header-nav">
-			<?php include('navigation.php'); ?>
-		</nav>
+	<nav id="header-nav">
+		<?php include('navigation.php'); ?>
+	</nav>
 
-	</header>
+	<div id="header-search"><?php get_search_form(); ?></div>
+
+</header>
 
 <div id="pagecontainer">
 
