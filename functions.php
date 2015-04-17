@@ -49,6 +49,12 @@
 	);
 	add_theme_support( 'custom-background', $defaults );
 
+//Editor content match the resulting post output in the theme
+	function cf_editor_styles() {
+	    add_editor_style( 'editor-style.css' );
+	}
+	add_action( 'admin_init', 'cf_editor_styles' );
+
 // Add support for featured images	
 	add_theme_support( 'post-thumbnails' ); 
 
@@ -56,8 +62,18 @@
 	function cf_register_widgets_init() {
 
 		register_sidebar( array(
-			'name'          => 'Left sidebar',
-			'id'            => 'sidebar-left',
+			'name'          => 'Blog sidebar',
+			'id'            => 'blog-sidebar',
+			'description'   => 'Sidebar displayed on the blog',
+			'before_widget' => '<div class="blog-sidebar-content">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="blog-sidebar-heading">',
+			'after_title'   => '</h2>',
+		) );
+
+		register_sidebar( array(
+			'name'          => 'Page Left sidebar',
+			'id'            => 'page-sidebar-left',
 			'description'   => 'Sidebar for the Left Sidebar template.',
 			'before_widget' => '<div class="sidebar-content">',
 			'after_widget'  => '</div>',
@@ -66,8 +82,8 @@
 		) );
 
 		register_sidebar( array(
-			'name'          => 'Right sidebar',
-			'id'            => 'sidebar-right',
+			'name'          => 'Page Right sidebar',
+			'id'            => 'page-sidebar-right',
 			'description'   => 'Sidebar for the Right Sidebar template.',
 			'before_widget' => '<div class="sidebar-content">',
 			'after_widget'  => '</div>',
