@@ -3,11 +3,9 @@ Wordpress starter theme
 
 To Do:
 
-Pagination
 Comments page
 Avatar functions
-Tags page
-Category page
 Front Page
 Date page
 Calendar functionality
+Readmore links on blog posts
