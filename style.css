@@ -3,3 +3,17 @@ Theme Name: C Framework
 Author: Camilla Westin
 Version: 1.0
 */
+
+/* Wordpress specific css classes */
+
+.wp-caption {}
+.wp-caption-text {}
+.gallery-caption {}
+
+.sticky {}
+
+.bypostauthor {}
+
+.alignright {float: right;}
+.alignleft {float: left;}
+.aligncenter {}
