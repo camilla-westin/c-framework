@@ -1,7 +1,7 @@
 # c-framework
 Wordpress starter theme
 
-What is left to add:
+To Do:
 
 Pagination
 Comments page
@@ -10,3 +10,4 @@ Tags page
 Category page
 Front Page
 Date page
+Calendar functionality
