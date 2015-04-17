@@ -32,8 +32,22 @@
 
 	add_action( 'init', 'register_theme_menus' );
 
-//WordPress will render its built-in HTML5 search form	
-	add_theme_support( 'html5', array( 'search-form' ) );
+//This feature allows the use of HTML5 markup for the search forms, comment forms, comment lists, gallery, caption and widgets. 	
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'widgets' ) );
+
+
+//Adds support for an editor to change background
+	add_theme_support( 'custom-background' );
+
+	$defaults = array(
+	'default-color'          => '',
+	'default-image'          => '',
+	'wp-head-callback'       => '_custom_background_cb',
+	'admin-head-callback'    => '',
+	'admin-preview-callback' => ''
+
+	);
+	add_theme_support( 'custom-background', $defaults );
 
 // Add support for featured images	
 	add_theme_support( 'post-thumbnails' ); 
@@ -77,7 +91,8 @@
 
 	add_action( 'widgets_init', 'cf_register_widgets_init' );
 
-
+//This feature adds RSS feed links to HTML <head>.
+	add_theme_support( 'automatic-feed-links' );
 
 // Registers a new custom post showing contacts
 	add_action( 'init', 'contacts_post_type' );
@@ -85,8 +100,8 @@
 	  register_post_type( 'contacts',
 	    array(
 	      'labels' => array(
-	        'name' => __( 'Contacts' ),
-	        'singular_name' => __( 'Contact' )
+	        'name' => __( 'Contacts', 'c-framework' ),
+	        'singular_name' => __( 'Contact', 'c-framework' )
 	      ),
 	      'public' => true,
 	    )
@@ -126,7 +141,7 @@
         if (!is_home()) {
  
             echo "<a href='";
-            echo get_option('home');
+            echo home_url();
             echo "'>";
             echo "Start";
             echo "</a>";
