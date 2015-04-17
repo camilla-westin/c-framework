@@ -1,6 +1,10 @@
 </div><!-- end #page-->
 <footer>
 	<p>Copyright © <?php echo date('Y'); ?></p>
+
+	<div class="footer-widget-area">
+		<?php dynamic_sidebar('footer-widget-1'); ?>
+	</div>
 </footer>
 
 

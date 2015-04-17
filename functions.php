@@ -39,13 +39,12 @@
 	add_theme_support( 'post-thumbnails' ); 
 
 //Register our sidebars and widgetized areas.
-
-	function cf_widgets_init() {
+	function cf_register_widgets_init() {
 
 		register_sidebar( array(
 			'name'          => 'Left sidebar',
 			'id'            => 'sidebar-left',
-			'description'   => 'Sidebar for the "Left Sidebar" template.',
+			'description'   => 'Sidebar for the Left Sidebar template.',
 			'before_widget' => '<div class="sidebar-content">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="sidebar-heading">',
@@ -55,18 +54,29 @@
 		register_sidebar( array(
 			'name'          => 'Right sidebar',
 			'id'            => 'sidebar-right',
-			'description'   => 'Sidebar for the "Right Sidebar" template.',
+			'description'   => 'Sidebar for the Right Sidebar template.',
 			'before_widget' => '<div class="sidebar-content">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="sidebar-heading">',
 			'after_title'   => '</h2>',
 		) );
 
+		register_sidebar( array(
+			'name'          => 'Footer Widget Area 1',
+			'id'            => 'footer-widget-1',
+			'description'   => 'Widget area inside footer',
+			'before_widget' => '<div class="footer-widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="footerwidget-heading">',
+			'after_title'   => '</h2>',
+		) );
 
+		/* Repeat register_sidebar() code for additional sidebars. */
 
 	}
 
-	add_action( 'widgets_init', 'cf_widgets_init' );
+	add_action( 'widgets_init', 'cf_register_widgets_init' );
+
 
 
 // Registers a new custom post showing contacts
