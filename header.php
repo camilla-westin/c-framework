@@ -20,7 +20,7 @@
 <header>
 
 	<div class="header-logo">
-		<a href="<?php bloginfo('url'); ?>"><img src="" alt="Logotype"></a>
+		<a href="<?php echo esc_url( home_url() ); ?>"><img src="" alt="Logotype"></a>
 	</div>
 
 	<nav id="header-nav">
