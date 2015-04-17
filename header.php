@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title><?php wp_title(); ?></title>
+	<title><?php wp_title( '|', true, 'right'); bloginfo('name'); ?></title>
 
 	<!-- Imports styles and javascript located in functions.php or plugins -->
 	<?php wp_head(); ?>
@@ -27,7 +27,9 @@
 		<?php include('navigation.php'); ?>
 	</nav>
 
-	<div id="header-search"><?php get_search_form(); ?></div>
+	<div id="header-search">
+		<?php get_search_form(); ?>
+	</div>
 
 </header>
 
