@@ -35,6 +35,11 @@
 
 	<?php endif; ?>
 
+	<div id="pagination">
+		<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+		<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+	</div>
+
 	<aside class="sidebar blog-sidebar">
 		<?php dynamic_sidebar('blog-sidebar'); ?>
 	</aside>
