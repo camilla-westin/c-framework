@@ -24,7 +24,7 @@
 	</div>
 
 	<nav id="header-nav">
-		<?php include('navigation.php'); ?>
+		<?php get_template_part('navigation'); ?>
 	</nav>
 
 	<div id="header-search">
