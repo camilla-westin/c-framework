@@ -24,8 +24,8 @@
 	function register_theme_menus() {
 		register_nav_menus(
 			array (
-				'primary-menu' => __( 'Primary Menu' ),
-				'sidebar-menu' => __( 'Sidebar Menu' )
+				'primary-menu' => __( 'Primary Menu', 'c-framework' ),
+				'sidebar-menu' => __( 'Sidebar Menu', 'c-framework' )
 				)
 			);
 		}
