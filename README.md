@@ -1,11 +1,12 @@
 # c-framework
-Wordpress starter theme
+<h1>Wordpress starter theme</h1>
 
-To Do:
+<h2>To Do:</h2>
 
-Comments page
-Avatar functions
-Front Page
-Date page
-Calendar functionality
-Readmore links on blog posts
+<p>Comments page</p>
+<p>Avatar functions</p>
+<p>Front Page</p>
+<p>Date page</p>
+<p>Calendar functionality</p>
+<p>Readmore links on blog posts</p>
+<p>Custom Archive page - http://www.smashingmagazine.com/2015/04/16/building-custom-wordpress-archive-page/ </p>
