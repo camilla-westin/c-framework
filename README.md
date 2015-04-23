@@ -13,3 +13,4 @@
 <p>Twitter widget</p>
 <p>Template with sidebars on both sides and content in the middle</p>
 <p>Sticky posts</p>
+<p>Aria Roles</p>
