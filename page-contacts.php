@@ -23,7 +23,7 @@ $query = new WP_Query( $args );
 	<div class="contacts-item">	
 		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<?php the_post_thumbnail(); ?>
-		<p><?php the_content(); ?></p>
+		<div class="contacts-content"><?php the_content(); ?></div>
 	</div>	
 	<?php endwhile; endif; wp_reset_postdata(); ?>
 

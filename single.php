@@ -23,7 +23,7 @@
 			<div class="post-thumbnail"><?php the_post_thumbnail(); ?></div>	
 		<?php } ?>
 
-		<div class="post-content"><p><?php the_content(); ?></p></div>
+		<div class="single-post-content"><?php the_content(); ?></div>
 
 		<div class="categories"><?php the_category(); ?></div>
 

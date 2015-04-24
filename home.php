@@ -23,9 +23,11 @@
 			<div class="post-thumbnail"><?php the_post_thumbnail(); ?></div>
 		<?php } ?>
 
-		<div class="excerpt"><p><?php the_excerpt(); ?></p></div>
+		<div class="excerpt"><?php the_excerpt(); ?></div>
 
 		<div class="categories"><?php the_category(); ?></div>
+
+		<div class="tags"><?php the_tags( '', ' ', '' ); ?></div>
 
 	</article>
 

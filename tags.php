@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<section class="pagecontent pagecontent-posts">
+<section class="pagecontent pagecontent-tags-posts">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -13,7 +13,7 @@
 
 		<span class="date"><?php the_time('F j, Y'); ?></span>
 
-		<div class="excerpt"><p><?php the_excerpt(); ?></p></div>
+		<div class="excerpt"><?php the_excerpt(); ?></div>
 
 		<div class="categories"><?php the_category(); ?></div>
 
