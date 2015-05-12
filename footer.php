@@ -1,4 +1,4 @@
-</div><!-- end #page-->
+</div><!-- end #pagecontainer-->
 <footer>
 	<p>Copyright © <?php echo date('Y'); ?></p>
 
