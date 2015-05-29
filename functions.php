@@ -125,9 +125,5 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-
-//Contacts - Custom post type
-	require_once('includes/contacts-customposttype.php');
-
 // Breadcrumbs
 	require_once('includes/breadcrumbs.php'); ?>
