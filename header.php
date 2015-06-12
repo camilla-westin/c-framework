@@ -7,7 +7,6 @@
 
 	<!-- Imports styles and javascript located in functions.php or plugins -->
 	<?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>

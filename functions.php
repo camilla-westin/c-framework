@@ -12,7 +12,6 @@
 	function cf_theme_js() {
 
 
-
 	}
 
 	add_action ( 'wp_enqueue_scripts', 'cf_theme_js' );
