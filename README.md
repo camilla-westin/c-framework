@@ -8,3 +8,4 @@
 <p>Aria Roles</p>
 <p>Avatar functionality</p>
 <p>Responsive menu</p>
+<p>Widget area specific for 404 page</p>
