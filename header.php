@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title><?php wp_title( '|', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php wp_title( '|', true, 'right'); ?></title>
 
 	<!-- Imports styles and javascript located in functions.php or plugins -->
 	<?php wp_head(); ?>
