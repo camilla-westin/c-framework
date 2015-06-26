@@ -17,6 +17,11 @@
 
 		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
+		<div class="author-meta">
+			<span class="author-img"><?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?></span>
+			<span class="the-author"><?php the_author(); ?></span>
+		</div>
+
 		<span class="date"><?php the_time('F j, Y'); ?></span>
 
 		<?php if ( has_post_thumbnail() ) { ?>
