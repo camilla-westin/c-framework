@@ -27,8 +27,8 @@
 
 	<?php endif; ?>
 
-	<aside class="sidebar blog-sidebar">
-		<?php dynamic_sidebar('blog-sidebar'); ?>
+	<aside class="sidebar sidebar-archive">
+		<?php dynamic_sidebar('archive-widget'); ?>
 	</aside>
 
 </section>

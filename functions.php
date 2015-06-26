@@ -1,5 +1,7 @@
 <?php 
 
+	add_theme_support( 'title-tag' );
+
 //Import css/less styles into header
 	function cf_theme_styles() {
 		wp_enqueue_style( 'main-less-style', get_stylesheet_directory_uri() . '/style.less' );
@@ -61,9 +63,9 @@
 	function cf_register_widgets_init() {
 
 		register_sidebar( array(
-			'name'          => 'Blog sidebar',
+			'name'          => 'Blog',
 			'id'            => 'blog-sidebar',
-			'description'   => 'Sidebar displayed on the blog',
+			'description'   => 'Sidebar displayed on blog pages',
 			'before_widget' => '<div class="blog-sidebar-content">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="blog-sidebar-heading">',
@@ -71,7 +73,7 @@
 		) );
 
 		register_sidebar( array(
-			'name'          => 'Page Left sidebar',
+			'name'          => 'Left Sidebar Template',
 			'id'            => 'page-sidebar-left',
 			'description'   => 'Sidebar for the Left Sidebar template.',
 			'before_widget' => '<div class="sidebar-content">',
@@ -81,7 +83,7 @@
 		) );
 
 		register_sidebar( array(
-			'name'          => 'Page Right sidebar',
+			'name'          => 'Right Sidebar Template',
 			'id'            => 'page-sidebar-right',
 			'description'   => 'Sidebar for the Right Sidebar template.',
 			'before_widget' => '<div class="sidebar-content">',
@@ -91,12 +93,32 @@
 		) );
 
 		register_sidebar( array(
-			'name'          => 'Footer Widget Area 1',
-			'id'            => 'footer-widget-1',
+			'name'          => 'Footer',
+			'id'            => 'footer-widget',
 			'description'   => 'Widget area inside footer',
 			'before_widget' => '<div class="footer-widget">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h2 class="footerwidget-heading">',
+			'before_title'  => '<h2 class="footer-widget-heading">',
+			'after_title'   => '</h2>',
+		) );
+
+		register_sidebar( array(
+			'name'          => '404',
+			'id'            => '404-widget',
+			'description'   => 'Widget area for 404 page',
+			'before_widget' => '<div class="404-widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="404-widget-heading">',
+			'after_title'   => '</h2>',
+		) );
+
+		register_sidebar( array(
+			'name'          => 'Archive and Category',
+			'id'            => 'archive-widget',
+			'description'   => 'Widget area showing on archive and category pages',
+			'before_widget' => '<div class="archive-widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="archive-widget-heading">',
 			'after_title'   => '</h2>',
 		) );
 
