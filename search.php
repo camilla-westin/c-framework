@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 
 
-<section class="pagecontent pagecontent-searchresults">
+<section class="pagecontent pagecontent-serp">
 
 	<h1><?php wp_title(''); ?></h1>
 
@@ -19,7 +19,7 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<article id="searchresults-item post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="serp-item post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
