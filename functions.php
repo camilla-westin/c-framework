@@ -12,7 +12,7 @@
 
 //Import Javascript
 	function cf_theme_js() {
-
+		wp_enqueue_style( 'fluidvids', get_template_directory_uri() . '/includes/js/fluidvids.js' );
 
 	}
 
