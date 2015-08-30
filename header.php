@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title><?php wp_title( '|', true, 'right'); ?></title>
