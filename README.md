@@ -5,4 +5,3 @@
 
 <p>Aria Roles</p>
 <p>Responsive menu</p>
-<p>Responsive video - fluidvids</p>
